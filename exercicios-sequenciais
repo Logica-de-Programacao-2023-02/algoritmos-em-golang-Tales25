@@ -4,10 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	var n1 int
-	var n2 int
-	var n3 int
-	var soma int
+	var n1, n2, n3, soma int
 	fmt.Print("Primeiro número: ")
 	fmt.Scan(&n1)
 	fmt.Print("Segundo número: ")
@@ -16,4 +13,26 @@ func main() {
 	fmt.Scan(&n3)
 	soma = n1 + n2 + n3
 	fmt.Print(n1, "+", n2, "+", n3, "=", soma)
+}
+
+
+
+//Faça um algoritmo que leia um número inteiro e mostre o seu dobro, triplo e quadruplo.
+
+package main
+
+import "fmt"
+
+func main() {
+	//declaração de variáveis
+	var number int
+	//programa em si
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&number)
+	dobro := number * 2
+	triplo := number * 3
+	quadruplo := number * 4
+	fmt.Println("Seu dobro é ", dobro)
+	fmt.Println("Seu triplo é ", triplo)
+	fmt.Println("Seu quadruplo é ", quadruplo)
 }
