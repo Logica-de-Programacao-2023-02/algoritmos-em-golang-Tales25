@@ -36,3 +36,21 @@ func main() {
 	fmt.Println("Seu triplo é ", triplo)
 	fmt.Println("Seu quadruplo é ", quadruplo)
 }
+
+
+
+//Faça um algoritmo que leia o peso e a altura de uma pessoa e calcule o seu IMC (Índice de Massa Corporal).
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso, altura int
+	fmt.Print("Quanto você pesa? [kg] ")
+	fmt.Scan(&peso)
+	fmt.Print("E qual é sua altura? [m] ")
+	fmt.Scan(&altura)
+	imc := peso / (altura * altura)
+	fmt.Print("Seu IMC é de ",)
+}
