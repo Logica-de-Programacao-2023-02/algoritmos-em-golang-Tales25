@@ -162,3 +162,19 @@ func main() {
 	valor = valor - valor*0.1
 	fmt.Print("Com o desconto de 10% você vai pagar apenas ", valor)
 }
+
+
+
+//Faça um algoritmo que leia o peso de uma pessoa em quilos e converta para libras.
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso float64
+	fmt.Print("Quanto você pesa? [kg] ")
+	fmt.Scan(&peso)
+	peso = peso * 2.20462
+	fmt.Print("Seu peso em libras é de ", peso, " libras")
+}
