@@ -92,3 +92,20 @@ func main() {
 	dias := anos * 365
 	fmt.Print("Você tem aproximadamente ", dias, " dias de vida.")
 }
+
+
+
+//Faça um algoritmo que leia o salário de um funcionário e calcule o seu novo
+//salário com um aumento de 15%.
+
+package main
+
+import "fmt"
+
+func main() {
+	var salario float64
+	fmt.Print("Qual é o seu salário atual? ")
+	fmt.Scan(&salario)
+	salario = salario + (salario * 15 / 100)
+	fmt.Print("Seu novo salário é de ", salario)
+}
