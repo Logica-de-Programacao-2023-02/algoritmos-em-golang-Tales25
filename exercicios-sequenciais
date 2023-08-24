@@ -109,3 +109,21 @@ func main() {
 	salario = salario + (salario * 15 / 100)
 	fmt.Print("Seu novo salário é de ", salario)
 }
+
+
+
+//Faça um algoritmo que leia um número inteiro e mostre o seu sucessor e antecessor.
+
+package main
+
+import "fmt"
+
+func main() {
+	var numero int
+	fmt.Print("Escolha um número: ")
+	fmt.Scan(&numero)
+	ante := numero - 1
+	suce := numero + 1
+	fmt.Println("Seu antecessor é ", ante)
+	fmt.Print("Seu sucessor é ", suce)
+}
