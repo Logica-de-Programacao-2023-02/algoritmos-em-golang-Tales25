@@ -127,3 +127,22 @@ func main() {
 	fmt.Println("Seu antecessor é ", ante)
 	fmt.Print("Seu sucessor é ", suce)
 }
+
+
+
+//Faça um algoritmo que leia o número de dias trabalhados por um funcionário e
+//o valor da sua diária e calcule o seu salário.
+
+package main
+
+import "fmt"
+
+func main() {
+	var dias, diaria float64
+	fmt.Print("Qual o valor da sua diária? ")
+	fmt.Scan(&diaria)
+	fmt.Print("E por quantos dias você trabalhou? ")
+	fmt.Scan(&dias)
+	salario := diaria * dias
+	fmt.Print("Seu salário é de ", salario)
+}
