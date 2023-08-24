@@ -46,11 +46,15 @@ package main
 import "fmt"
 
 func main() {
-	var peso, altura int
+	var peso, altura, altura2, resultado float64
 	fmt.Print("Quanto você pesa? [kg] ")
 	fmt.Scan(&peso)
 	fmt.Print("E qual é sua altura? [m] ")
 	fmt.Scan(&altura)
-	imc := peso / (altura * altura)
-	fmt.Print("Seu IMC é de ",)
+	altura2 = altura * altura
+	resultado = peso / altura2
+	fmt.Print("Seu IMC é de ", resultado)
 }
+
+
+
