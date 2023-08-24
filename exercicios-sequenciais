@@ -146,3 +146,19 @@ func main() {
 	salario := diaria * dias
 	fmt.Print("Seu salário é de ", salario)
 }
+
+
+
+//Faça um algoritmo que leia o preço de um produto e mostre o seu valor com desconto de 10%.
+
+package main
+
+import "fmt"
+
+func main() {
+	var valor float64
+	fmt.Print("Qual o preço do produto? ")
+	fmt.Scan(&valor)
+	valor = valor - valor*0.1
+	fmt.Print("Com o desconto de 10% você vai pagar apenas ", valor)
+}
