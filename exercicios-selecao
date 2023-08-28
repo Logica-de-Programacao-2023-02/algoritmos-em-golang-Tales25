@@ -76,3 +76,33 @@ func main() {
 		fmt.Print("É um número ímpar")
 	}
 }
+
+
+
+//Faça um algoritmo que leia a altura e o sexo de uma pessoa e mostre se ela está abaixo, dentro ou
+//acima do peso ideal, utilizando as fórmulas do exercício 3 da lista de algoritmos sequenciais.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var peso, altura float64
+
+	fmt.Print("Peso: ")
+	fmt.Scan(&peso)
+
+	fmt.Print("Altura: ")
+	fmt.Scan(&altura)
+
+	imc := peso / (altura * altura)
+	
+	if imc < 18.50 {
+		fmt.Print("Você está abaixo do seu peso ideal.")
+	} else if imc > 24.99 {
+		fmt.Print("Você está acima do seu peso ideal")
+	} else {
+		fmt.Print("Você está no seu peso ideal")
+	}
+}
