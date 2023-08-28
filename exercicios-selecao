@@ -18,3 +18,39 @@ func main() {
 		fmt.Print("Ambos os números são iguais")
 	}
 }
+
+
+
+//Faça um algoritmo que leia três números inteiros e mostre o menor deles.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var n1, n2, n3 int
+
+	fmt.Print("Primeiro número: ")
+	fmt.Scan(&n1)
+	fmt.Print("Segundo número: ")
+	fmt.Scan(&n2)
+	fmt.Print("Terceiro número: ")
+	fmt.Scan(&n3)
+
+	if n1 < n2 && n1 < n3 {
+		fmt.Print("O primeiro número é o menor")
+	} else if n2 < n1 && n2 < n3 {
+		fmt.Print("O segundo número é o menor")
+	} else if n3 < n1 && n3 < n2 {
+		fmt.Print("O terceiro número é o menor")
+	} else if n1 == n2 && n1 < n3 {
+		fmt.Print("Os dois primeiros números são os menores")
+	} else if n1 == n3 && n1 < n2 {
+		fmt.Print("O primeiro e o último números são os menores")
+	} else if n2 == n3 && n2 < n1 {
+		fmt.Print("O segundo e terceiro são os menores")
+	} else {
+		fmt.Print("Todos os números são iguais")
+	}
+}
