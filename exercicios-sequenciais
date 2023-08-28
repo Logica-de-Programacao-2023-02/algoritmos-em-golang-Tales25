@@ -15,7 +15,7 @@ func main() {
 	fmt.Print(n1, "+", n2, "+", n3, "=", soma)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia um número inteiro e mostre o seu dobro, triplo e quadruplo.
 
@@ -37,7 +37,7 @@ func main() {
 	fmt.Println("Seu quadruplo é ", quadruplo)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia o peso e a altura de uma pessoa e calcule o seu IMC (Índice de Massa Corporal).
 
@@ -73,7 +73,7 @@ func main() {
 	fmt.Print("Seu IMC é de ", imc)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia três números reais e mostre a média ponderada entre
 //eles, com pesos 2, 3 e 5, respectivamente.
@@ -94,7 +94,7 @@ func main() {
 	fmt.Print("A média é ", media)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia a idade de uma pessoa em anos e mostre a idade em dias.
 
@@ -110,7 +110,7 @@ func main() {
 	fmt.Print("Você tem aproximadamente ", dias, " dias de vida.")
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia o salário de um funcionário e calcule o seu novo
 //salário com um aumento de 15%.
@@ -127,7 +127,7 @@ func main() {
 	fmt.Print("Seu novo salário é de ", salario)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia um número inteiro e mostre o seu sucessor e antecessor.
 
@@ -145,7 +145,7 @@ func main() {
 	fmt.Print("Seu sucessor é ", suce)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia o número de dias trabalhados por um funcionário e
 //o valor da sua diária e calcule o seu salário.
@@ -164,7 +164,7 @@ func main() {
 	fmt.Print("Seu salário é de ", salario)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia o preço de um produto e mostre o seu valor com desconto de 10%.
 
@@ -180,7 +180,7 @@ func main() {
 	fmt.Print("Com o desconto de 10% você vai pagar apenas ", valor)
 }
 
-
+######################################################################################################################################
 
 //Faça um algoritmo que leia o peso de uma pessoa em quilos e converta para libras.
 
