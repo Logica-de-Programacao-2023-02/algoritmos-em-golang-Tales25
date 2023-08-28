@@ -56,6 +56,23 @@ func main() {
 	fmt.Print("Seu IMC é de ", resultado)
 }
 
+//outra maneira (hoje deu certo)
+
+package main
+
+import "fmt"
+
+func main() {
+	//declaração de variáveis
+	var peso, altura, imc float64
+	fmt.Print("Qual seu peso [kg]? ")
+	fmt.Scan(&peso)
+	fmt.Print("E sua altura [m]? ")
+	fmt.Scan(&altura)
+	imc = peso / (altura * altura)
+	fmt.Print("Seu IMC é de ", imc)
+}
+
 
 
 //Faça um algoritmo que leia três números reais e mostre a média ponderada entre
