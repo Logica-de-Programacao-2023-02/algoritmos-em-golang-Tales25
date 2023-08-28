@@ -128,3 +128,31 @@ func main() {
 		fmt.Print("Não é múltiplo de 3 e 5 ao mesmo tempo")
 	}
 }
+
+
+
+//Faça um algoritmo que leia dois números inteiros e mostre o resultado da multiplicação entre eles,
+//se ambos forem positivos; ou a soma, se pelo menos um deles for negativo.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var num1, num2 int
+
+	fmt.Print("Primeiro número: ")
+	fmt.Scan(&num1)
+
+	fmt.Print("Segundo número: ")
+	fmt.Scan(&num2)
+
+	if num1 >= 0 && num2 >= 0 {
+		resultado := num1 * num2
+		fmt.Print(resultado)
+	} else {
+		resultado := num1 + num2
+		fmt.Print(resultado)
+	}
+}
