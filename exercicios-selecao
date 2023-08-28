@@ -158,3 +158,38 @@ func main() {
 }
 
 ######################################################################################################################################
+
+//Faça um algoritmo que leia o salário de um funcionário e calcule o seu novo salário
+//com um aumento de 10% se o salário for menor que R$ 1000,00; ou de 5% se o salário
+//for maior ou igual a R$ 1000,00.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//declaracao de variavel
+	var salary float64
+
+	//"coleta" de dados
+	fmt.Println("Quanto você recebe mensalmente? ")
+	fmt.Scan(&salary)
+
+	//condicao para salario maior ou igual a mil
+	if salary >= 1000 {
+
+		//novo valor do salario com aumento de 5%
+		salary = salary + (salary * 0.05)
+		fmt.Print("Com o aumento de 5% seu novo salário é de ", salary, " reais")
+
+	} else {
+
+		//novo valor do salario com aumento de 10%
+		salary = salary + (salary * 0.1)
+		fmt.Print("Com o aumento de 10% seu novo salário é de ", salary, " reais")
+
+	}
+}
+
+######################################################################################################################################
