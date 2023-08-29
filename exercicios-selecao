@@ -239,3 +239,60 @@ func main() {
 }
 
 ######################################################################################################################################
+
+//Faça um algoritmo que leia três números reais e mostre-os em ordem crescente.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//declaracao variaveis
+	var num1, num2, num3 float64
+
+	//coleta de informacoes
+	fmt.Println("Escolha três números reais diferentes entre si.")
+
+	fmt.Print("Primeiro número: ")
+	fmt.Scan(&num1)
+
+	fmt.Print("Segundo número: ")
+	fmt.Scan(&num2)
+
+	fmt.Print("Terceiro número: ")
+	fmt.Scan(&num3)
+
+	//condicionais para botar em ordem
+	if num1 < num2 && num2 < num3 {
+
+		fmt.Print("Em ordem crescente: ", num1, num2, num3)
+
+	} else if num1 < num3 && num3 < num2 {
+
+		fmt.Print("Em ordem crescente: ", num1, num3, num2)
+
+	} else if num2 < num1 && num1 < num3 {
+
+		fmt.Print("Em ordem crescente: ", num2, num1, num3)
+
+	} else if num2 < num3 && num3 < num1 {
+
+		fmt.Print("Em ordem crescente: ", num2, num3, num1)
+
+	} else if num3 < num1 && num1 < num2 {
+
+		fmt.Print("Em ordem crescente: ", num3, num1, num2)
+
+	} else if num3 < num2 && num2 < num1 {
+
+		fmt.Print("Em ordem crescente: ", num3, num2, num1)
+
+	} else {
+
+		fmt.Print("Error")
+
+	}
+}
+
+######################################################################################################################################
