@@ -201,3 +201,44 @@ func main() {
 }
 
 ######################################################################################################################################
+
+//Faça um algoritmo que leia vários números inteiros e mostre a média aritmética entre eles.
+//A leitura deve ser interrompida quando for lido o valor zero.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//declarando soma pq só funciona assim
+	var soma int
+
+	//atribuindo um valor para o numero pra n começar como o zero
+	num := 1
+
+	//atribuindo um valor inicial pro i
+	i := 0
+
+	// repetir a coleta dos numeros enquanto nao for coletado 0
+	for num != 0 {
+
+		//coleta dos numeros
+		fmt.Print("Escolha um número: ")
+		fmt.Scan(&num)
+
+		//adicionando os numeros somados na variavel soma
+		soma = soma + num
+
+		//adicionando a quantidade de numeros somados para usar como divi
+		i++
+
+	}
+
+	i--
+
+	media := soma / i
+
+	fmt.Print("A média é: ", media)
+
+}
