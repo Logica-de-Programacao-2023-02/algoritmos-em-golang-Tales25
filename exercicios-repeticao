@@ -242,3 +242,39 @@ func main() {
 	fmt.Print("A média é: ", media)
 
 }
+
+//ex09 comentado
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//declarei como inteiro 1 para nao dar erro no inicio do loop(enquanto)
+	var num = 1
+
+	//precisam ser declarados para nao dar erro dentro do loop for(enquanto)
+	i := 0
+	soma := 0
+
+	for num != 0 {
+
+		fmt.Print("Escolha um número: ")
+		fmt.Scan(&num)
+
+		soma = soma + num
+
+		i++
+
+	}
+
+	//para nao contar o divisor do 0 (stop number)
+	i--
+
+	//calcular a media, todos os valores adicionados sobre a quantidade de numeros adicionados
+	media := soma / i
+
+	fmt.Print("A média é: ", media)
+
+}
