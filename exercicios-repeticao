@@ -166,3 +166,38 @@ func main() {
 	}
 
 }
+
+######################################################################################################################################
+
+//Faça um algoritmo que leia um número inteiro positivo e mostre todos os seus divisores.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//declaracao variavel
+	var num int
+
+	//coleta da variavel
+	fmt.Print("Escolha um número inteiro: ")
+	fmt.Scan(&num)
+
+	//apenas para fins esteticos
+	fmt.Print("Seus divisores são: ")
+
+	//loop
+	for i := 1; i <= num; i++ {
+
+		if num%i == 0 {
+
+			fmt.Print(i, "; ")
+
+		}
+
+	}
+
+}
+
+######################################################################################################################################
