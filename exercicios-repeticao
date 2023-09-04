@@ -279,6 +279,36 @@ func main() {
 
 }
 
+//ex09 professor
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var soma, quantidade, x int
+	x = -1
+
+	for x != 0 {
+
+		fmt.Print("Digite um número: ")
+		fmt.Scan(&x)
+
+		//soma recebe a soma de X (soma = soma + x)
+		soma += x
+		//adiciona 1 a quantidade
+		quantidade++
+
+	}
+
+	//tirar um da quantidade para nao contar o 0
+	quantidade--
+	media := soma / quantidade
+	fmt.Println("A média é: ", media)
+
+}
+
 ######################################################################################################################################
 
 //Faça um algoritmo que leia vários números inteiros e mostre o maior deles. A leitura deve
