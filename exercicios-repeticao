@@ -376,3 +376,37 @@ func main() {
 	fmt.Print("O maior número é: ", maior)
 
 }
+
+//ex10 nao precisou dar um valor para "maior"
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var num, maior int
+
+	//declarei como 1 para o loop(enquanto) conseguir iniciar
+	num = 1
+	
+	//loop
+	for num != 0 {
+
+		//coletar o numero
+		fmt.Print("Escolha um número: ")
+		fmt.Scan(&num)
+
+		//se o num for maior doq a variavel maior (inicialmente 0), maior recebe o valor de num
+		if num > maior {
+
+			//e isso se repetira até que num seja igual a 0
+			maior = num
+
+		}
+
+	}
+
+	fmt.Println("O maior número foi: ", maior)
+
+}
